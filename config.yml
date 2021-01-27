@@ -1,0 +1,106 @@
+# ---
+# Rooms:
+#   - Name: "SIMICS Server Reset/Power Control"
+#     Appliances:
+#       - Name: SIMICS01
+#         Type: GPIO
+#         Pin: 2
+#       - Name: SIMICS02
+#         Type: GPIO
+#         Pin: 3
+#       - Name: SIMICS03
+#         Type: GPIO
+#         Pin: 4
+#       - Name: SIMICS04
+#         Type: GPIO
+#         Pin: 17
+#       - Name: SIMICS05
+#             Type: GPIO
+#             Pin: 27
+#   # - Name: Scripts
+#   #   Appliances:
+#   #     - Name: Internet
+#   #       Type: Script
+#   #       Status: ping -c 1 8.8.8.8 > /dev/null
+#   #       Timeout: 0.3
+#   #     - Name: Nginx
+#   #       Type: Script
+#   #       Status: sudo systemctl is-active --quiet nginx 2> /dev/null
+#   #       Action:
+#   #         On: sudo systemctl start nginx
+#   #         Off: sudo systemctl stop nginx
+
+
+# #Settings:
+# #  Host: 0.0.0.0
+# #  Port: 8000
+# #  Debug: True
+# #  SSL:
+# #    Enabled: False
+# #    Path: default
+# #    Certificate: WebGPIO.cer
+# #    Key: WebGPIO.key
+# #  Inverted: False
+# #  RefreshRate: 4
+
+---
+Rooms:
+  - Name: "TPE SIMICS Server Reset Control"
+    Appliances:
+      - Name: Reset_simics01
+        Type: GPIO
+        Pin: 2
+        Duration: 1
+      - Name: Reset_simics02
+        Type: GPIO
+        Pin: 3
+        Duration: 1
+        Duration: 1
+      - Name: Reset_simics03
+        Type: GPIO
+        Pin: 4
+        Duration: 1
+      - Name: Reset_simics04
+        Type: GPIO
+        Pin: 17
+        Duration: 1
+      - Name: Reset_simics05
+        Type: GPIO
+        Pin: 27
+        Duration: 1
+  - Name: "TPE SIMICS Server Power Control"
+    Appliances:
+      - Name: PowerUp_simics01
+        Type: GPIO
+        Pin: 5
+        Duration: 1
+      - Name: PowerUp_simics02
+        Type: GPIO
+        Pin: 6
+        Duration: 1
+      - Name: PowerUp_simics03
+        Type: GPIO
+        Pin: 13
+        Duration: 1
+      - Name: PowerUp_simics04
+        Type: GPIO
+        Pin: 19
+        Duration: 1
+      - Name: PowerUp_simics05
+        Type: GPIO
+        Pin: 26
+        Duration: 1
+
+
+
+#Settings:
+#  Host: 0.0.0.0
+#  Port: 8000
+#  Debug: True
+#  SSL:
+#    Enabled: False
+#    Path: default
+#    Certificate: WebGPIO.cer
+#    Key: WebGPIO.key
+#  Inverted: False
+#  RefreshRate: 4

@@ -1,7 +1,6 @@
 *.key
 *.cer
 RPi
-config.yml
 passwordhash
 worker.py
 board.py
