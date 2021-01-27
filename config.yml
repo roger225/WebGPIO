@@ -89,25 +89,25 @@ Rooms:
         Type: GPIO
         Pin: 26
         Duration: 1
-  - Name: "TPE SIMICS Server Force Power Off Control"
+  - Name: "TPE SIMICS Server Force Power Off Control (Press Power Button 10s)"
     Appliances:
-      - Name: PowerUp_simics01
+      - Name: PowerOff_simics01
         Type: GPIO
         Pin: 5
         Duration: 10
-      - Name: PowerUp_simics02
+      - Name: PowerOff_simics02
         Type: GPIO
         Pin: 6
         Duration: 10
-      - Name: PowerUp_simics03
+      - Name: PowerOff_simics03
         Type: GPIO
         Pin: 13
         Duration: 10
-      - Name: PowerUp_simics04
+      - Name: PowerOff_simics04
         Type: GPIO
         Pin: 19
         Duration: 10
-      - Name: PowerUp_simics05
+      - Name: PowerOff_simics05
         Type: GPIO
         Pin: 26
         Duration: 10
