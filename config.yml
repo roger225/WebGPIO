@@ -49,40 +49,40 @@ Rooms:
     Appliances:
       - Name: Power On/Off
         Type: GPIO
-        Pin: 2
+        Pin: 5
         # Duration: 1
       - Name: Power Cycle
         Type: GPIO
-        Pin: 2
+        Pin: 5
         Duration: 1
 
   - Name: "EVB Power Control"
     Appliances:
       - Name: Power On/Off
         Type: GPIO
-        Pin: 3
+        Pin: 6
         # Duration: 1
       - Name: Power Cycle
         Type: GPIO
-        Pin: 3
+        Pin: 6
         Duration: 1
   - Name: "Host PC Power Control"
     Appliances:
       - Name: Power Button
         Type: GPIO
-        Pin: 4
+        Pin: 13
         # Duration: 1
       - Name: Power Button Cycle
         Type: GPIO
-        Pin: 4
+        Pin: 13
         Duration: 1
       - Name: Reset Button
         Type: GPIO
-        Pin: 17
+        Pin: 19
         # Duration: 1
       - Name: Reset Button Cycle
         Type: GPIO
-        Pin: 17
+        Pin: 19
         Duration: 1
 
   #     - Name: Reset_simics02
